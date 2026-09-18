@@ -16,7 +16,7 @@ Product graphic generated for this open-source integration. Device details are d
 ## Installation with HACS
 
 1. Open HACS.
-2. Add `https://github.com/g1n10l/Home-Assistant` as a custom integration repository.
+2. Add `https://github.com/g1n10l/Xiaomi-Mi-Air-Purifier-2` as a custom integration repository.
 3. Install **Home Assistant - Xiaomi Mi Air Purifier 2**.
 4. Restart Home Assistant.
 
