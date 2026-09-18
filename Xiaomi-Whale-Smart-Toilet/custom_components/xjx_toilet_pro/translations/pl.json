@@ -1,0 +1,108 @@
+{
+  "title": "Home Assistant - Xiaomi-Whale-Smart-Toilet (xjx.toilet.pro)",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Połącz Home Assistant - Xiaomi-Whale-Smart-Toilet (xjx.toilet.pro)",
+        "description": "Podaj lokalny adres IP oraz 32-znakowy token Xiaomi miIO.",
+        "data": {
+          "host": "Adres IP",
+          "token": "Token miIO",
+          "name": "Nazwa"
+        },
+        "data_description": {
+          "host": "Ustaw urządzeniu stały lub zarezerwowany adres IP.",
+          "token": "32-znakowy lokalny token miIO.",
+          "name": "Nazwa urządzenia wyświetlana w Home Assistant."
+        }
+      },
+      "reconfigure": {
+        "title": "Zmień konfigurację Home Assistant - Xiaomi-Whale-Smart-Toilet (xjx.toilet.pro)",
+        "description": "Zaktualizuj dane lokalnego połączenia.",
+        "data": {
+          "host": "Adres IP",
+          "token": "Token miIO",
+          "name": "Nazwa"
+        },
+        "data_description": {
+          "host": "Ustaw urządzeniu stały lub zarezerwowany adres IP.",
+          "token": "32-znakowy lokalny token miIO.",
+          "name": "Nazwa urządzenia wyświetlana w Home Assistant."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie można połączyć się z urządzeniem. Sprawdź adres IP, token, sieć i dostępność urządzenia.",
+      "unsupported_model": "Połączone urządzenie nie zgłasza modelu xjx.toilet.pro.",
+      "unknown": "Wystąpił nieoczekiwany błąd podczas łączenia z urządzeniem."
+    },
+    "abort": {
+      "already_configured": "Ta deska jest już skonfigurowana.",
+      "reconfigure_successful": "Ustawienia połączenia zostały zaktualizowane."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "occupied": {"name": "Zajęta"},
+      "air_filter": {"name": "Filtr powietrza"},
+      "warm_air_drying_status": {"name": "Status suszenia"},
+      "rear_wash_status": {"name": "Status mycia tylnego"}
+    },
+    "sensor": {
+      "water_filter_days_remaining": {"name": "Pozostałe dni filtra wody"}
+    },
+    "switch": {
+      "led": {"name": "Oświetlenie nocne"},
+      "self_clean": {"name": "Samooczyszczanie"},
+      "warm_air_drying": {"name": "Suszenie"},
+      "rear_wash": {"name": "Mycie tylne"}
+    },
+    "select": {
+      "seat_temperature": {
+        "name": "Temperatura deski",
+        "state": {
+          "off": "Wyłączone (temperatura pokojowa)",
+          "low": "Niska (około 32°C)",
+          "medium": "Średnia (około 35°C)",
+          "high": "Wysoka (około 38°C)"
+        }
+      },
+      "fan_temperature": {
+        "name": "Temperatura ciepłego nawiewu",
+        "state": {
+          "low": "Niska (około 36°C)",
+          "medium": "Średnia (około 43°C)",
+          "high": "Wysoka (około 50°C)"
+        }
+      },
+      "rear_wash_water_temperature": {
+        "name": "Temperatura wody, mycie tylne",
+        "state": {
+          "low": "Niska (około 35°C)",
+          "medium": "Średnia (około 37°C)",
+          "high": "Wysoka (około 39°C)"
+        }
+      }
+    }
+  },
+  "services": {
+    "send_command": {
+      "name": "Wyślij surową komendę",
+      "description": "Wyślij surową komendę miIO do deski sedesowej.",
+      "fields": {
+        "config_entry_id": {
+          "name": "Wpis integracji",
+          "description": "Wpis integracji deski sedesowej, którą chcesz sterować."
+        },
+        "command": {
+          "name": "Komenda",
+          "description": "Nazwa surowej komendy miIO."
+        },
+        "params": {
+          "name": "Parametry",
+          "description": "Opcjonalna lista lub słownik parametrów komendy."
+        }
+      }
+    }
+  }
+}
