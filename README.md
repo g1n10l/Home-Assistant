@@ -20,14 +20,6 @@ Local Home Assistant integration for Xiaomi Mi Air Purifier 2. It communicates d
 
 Copy `custom_components/xiaomi_mi_air_purifier_2` to the `custom_components` directory in your Home Assistant configuration, then restart Home Assistant.
 
-## Additional projects
-
-- `Xiaomi-Pedestal-Fan-1C`
-- `Xiaomi-Whale-Smart-Toilet`
-- `ha-temp-mgmnt`
-
-These projects remain in their own subdirectories and are not installed by the HACS entry for this repository.
-
 ## License
 
 [MIT](LICENSE)
