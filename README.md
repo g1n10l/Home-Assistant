@@ -2,6 +2,10 @@
 
 Local Home Assistant integration for Xiaomi Mi Air Purifier 2. It communicates directly with the purifier over the LAN by using its miIO token. No Xiaomi cloud connection is used after setup.
 
+![Home Assistant - Xiaomi Mi Air Purifier 2](docs/images/xiaomi-mi-air-purifier-2.png)
+
+Product graphic generated for this open-source integration. Device details are documented on the [Xiaomi Mi Air Purifier M1 product page](https://home.miot-spec.com/s/zhimi.airpurifier.m1).
+
 ## Supported models
 
 - `zhimi.airpurifier.m1`
