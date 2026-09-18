@@ -1,11 +1,33 @@
-# Home Assistant
+# Xiaomi Mi Air Purifier 2 for Home Assistant
 
-Zbiorcze repozytorium integracji Home Assistant dla urządzeń Xiaomi.
+Local Home Assistant integration for Xiaomi Mi Air Purifier 2. It communicates directly with the purifier over the LAN by using its miIO token. No Xiaomi cloud connection is used after setup.
 
-## Projekty
+## Supported models
 
-- `Xiaomi-Mi-Air-Purifier-M1`
+- `zhimi.airpurifier.m1`
+- `zhimi.airpurifier.m2`
+- `zhimi.airpurifier.ma1`
+- `zhimi.airpurifier.ma2`
+
+## Installation with HACS
+
+1. Open HACS.
+2. Add `https://github.com/g1n10l/Home-Assistant` as a custom integration repository.
+3. Install **Xiaomi Mi Air Purifier 2**.
+4. Restart Home Assistant.
+
+## Manual installation
+
+Copy `custom_components/xiaomi_mi_air_purifier_2` to the `custom_components` directory in your Home Assistant configuration, then restart Home Assistant.
+
+## Additional projects
+
 - `Xiaomi-Pedestal-Fan-1C`
 - `Xiaomi-Whale-Smart-Toilet`
+- `ha-temp-mgmnt`
 
-Każdy projekt znajduje się w osobnym podkatalogu.
+These projects remain in their own subdirectories and are not installed by the HACS entry for this repository.
+
+## License
+
+[MIT](LICENSE)
