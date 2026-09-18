@@ -4,9 +4,9 @@ Local Home Assistant integration for Xiaomi Mi Air Purifier 2. It communicates d
 
 ## Product
 
-[![Xiaomi Mi Air Purifier 2](https://www.jib.co.th/img_master/uploads/Content/9301214081/xiaomi-mi-air-purifier-2-001.jpg)](https://www.mi.com/in/air2/)
+[![Xiaomi Mi Air Purifier M1](https://cnbj1.fds.api.xiaomi.com/iotweb-product-center/100.png?Expires=9223372036854775807&GalaxyAccessKeyId=AKVGLQWBOVIRQ3XLEW&Signature=m8rTUCSC4C5WVQ3OKdRlrM+0jI0%3D)](https://home.miot-spec.com/s/zhimi.airpurifier.m1)
 
-The image links to the [official Xiaomi Mi Air Purifier 2 product page](https://www.mi.com/in/air2/). The product photo is hosted by [JIB](https://www.jib.co.th/web/product/readProduct/27144/MI--%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%9F%E0%B8%AD%E0%B8%81%E0%B8%AD%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8--AIR-PURIFIER-2).
+The image links to the [Xiaomi Mi Air Purifier M1 product page](https://home.miot-spec.com/s/zhimi.airpurifier.m1). The product photo is hosted by Xiaomi.
 
 ## Supported models
 
